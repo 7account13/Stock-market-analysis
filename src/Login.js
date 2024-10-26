@@ -11,7 +11,7 @@ const Login = () => {
   const login = () => {
     if (username.current.value === "Dinesh" && password.current.value === "Dinesh@123") {
       setMsg("You have logged in successfully.");
-      // Redirect or perform further actions on successful login
+      navigate("/dashboard"); // Redirect to dashboard
     } else {
       setMsg("Please enter a valid username and password.");
     }

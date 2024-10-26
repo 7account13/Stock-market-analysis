@@ -1,0 +1,23 @@
+.dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .dashboard-content {
+    padding-top: 60px; /* Height of header */
+    padding-bottom: 40px; /* Height of footer */
+  }
+  
+  
+  .portfolio-overview,
+  .performance,
+  .market-news {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
