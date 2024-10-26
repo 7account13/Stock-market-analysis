@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1>Dashboard Header</h1>
+      <h1>ZEN STOCKS</h1>
     </header>
   );
 };

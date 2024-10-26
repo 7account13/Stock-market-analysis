@@ -7,7 +7,8 @@
 .dashboard-content {
   flex: 1; /* Allows the content area to grow */
   padding: 20px; /* Add padding to the content area */
-  background-color: #f4f4f4; /* Optional background color for contrast */
+  background-color: #102156; 
+  color: aliceblue;
 }
 
 h1 {
