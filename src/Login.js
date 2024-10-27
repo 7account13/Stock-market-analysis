@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from './UserContext'; // Import UserContext
 import './Login.css';
 
 const Login = () => {
@@ -7,23 +8,21 @@ const Login = () => {
   const username = useRef();
   const password = useRef();
   const navigate = useNavigate();
+  const { login } = useContext(UserContext); // Use login function from context
 
   const validateEmail = (email) => {
-    // Simple regex for email validation
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
   };
 
   const validatePassword = (pwd) => {
-    // Check for minimum length, numbers and letters
     const isLengthValid = pwd.length >= 8;
     const hasNumbers = /\d/.test(pwd);
     const hasLetters = /[a-zA-Z]/.test(pwd);
-
     return isLengthValid && hasNumbers && hasLetters;
   };
 
-  const login = () => {
+  const handleLogin = () => {
     const email = username.current.value;
     const pwd = password.current.value;
 
@@ -44,8 +43,10 @@ const Login = () => {
     }
 
     if (email === "dinesh@example.com" && pwd === "Dinesh@123") {
+      const userData = { name: "Dinesh", email }; // Define user data
+      login(userData); // Use the login function to set user
       setMsg("You have logged in successfully.");
-      navigate("/dashboard"); 
+      navigate("/dashboard");
     } else {
       setMsg("Please enter a valid username and password.");
     }
@@ -56,7 +57,7 @@ const Login = () => {
       <h1>Login Form</h1>
       <input type="text" ref={username} placeholder="Email" /><br />
       <input type="password" ref={password} placeholder="Password" /><br />
-      <button onClick={login}>Login</button>
+      <button onClick={handleLogin}>Login</button>
       <p onClick={() => navigate('/register')} className="redirect">
         Don't have an account?
       </p>
