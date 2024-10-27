@@ -9,6 +9,16 @@
   margin: auto;
   margin-top: 100px;
 }
+.background {
+  background-image: url('/public/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 h2 {
   margin-bottom: 20px;

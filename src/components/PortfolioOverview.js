@@ -1,7 +1,7 @@
 import React from "react";
 
 function PortfolioOverview() {
-  const totalValue = "$10,000"; // Mock data; replace with real data or props
+  const totalValue = "$10,000"; 
   const dailyChange = "+$200 (2%)";
 
   return (

@@ -22,6 +22,7 @@ function Register() {
   };
 
   return (
+    <div className="background">
     <div className="container">
       <form onSubmit={handleSubmit}>
         <h2>Register</h2>
@@ -49,6 +50,7 @@ function Register() {
           Already have an account?
         </p>
       </form>
+    </div>
     </div>
   );
 }

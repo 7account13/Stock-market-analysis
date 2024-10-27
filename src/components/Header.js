@@ -3,10 +3,11 @@ import { UserContext } from '../UserContext';
 import './Header.css';
 
 const Header = () => {
-  const { user } = useContext(UserContext); // Access user from context
+  const { user } = useContext(UserContext); 
 
   return (
     <header className="header">
+      <h1>ZEN STOCKS</h1>
       <nav className="nav-links">
         <a href="/dashboard">Dashboard</a>
         <a href="/market">Market</a>

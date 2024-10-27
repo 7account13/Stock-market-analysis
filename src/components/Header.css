@@ -7,9 +7,10 @@
 
 .header {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #0b1638;
   padding: 10px 20px;
   color: #fff;
   font-family: Arial, sans-serif;

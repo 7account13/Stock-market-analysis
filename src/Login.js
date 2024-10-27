@@ -53,6 +53,7 @@ const Login = () => {
   };
 
   return (
+    <div className="background">
     <div className="container">
       <h1>Login Form</h1>
       <input type="text" ref={username} placeholder="Email" /><br />
@@ -63,6 +64,7 @@ const Login = () => {
       </p>
       <hr />
       {msg && <h2>{msg}</h2>}
+    </div>
     </div>
   );
 };
