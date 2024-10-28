@@ -1,16 +1,29 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures the dashboard takes the full height */
+  min-height: 100vh; 
+  padding-top: 60px; 
+  background-color: #0e1a2c; 
+  color: aliceblue; 
 }
 
 .dashboard-content {
-  flex: 1; /* Allows the content area to grow */
-  padding: 20px; /* Add padding to the content area */
+  flex: 1; 
+  padding: 20px; 
   background-color: #102156; 
-  color: aliceblue;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 h1 {
-  margin-bottom: 20px; /* Adds spacing below the title */
+  margin-bottom: 20px; 
+  font-size: 2rem;
+  color: #f0f0f0; 
+}
+
+
+p {
+  line-height: 1.6; 
+  margin-bottom: 15px; 
+  color: #dcdcdc; 
 }
