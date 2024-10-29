@@ -1,6 +1,6 @@
 import React, { useRef, useState, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from './UserContext'; // Import UserContext
+import { UserContext } from './UserContext'; 
 import './Login.css';
 
 const Login = () => {
@@ -8,7 +8,7 @@ const Login = () => {
   const username = useRef();
   const password = useRef();
   const navigate = useNavigate();
-  const { login } = useContext(UserContext); // Use login function from context
+  const { login } = useContext(UserContext); 
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

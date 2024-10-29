@@ -22,6 +22,7 @@
 
 h2 {
   margin-bottom: 20px;
+  color: black;
 }
 
 input {
@@ -58,4 +59,7 @@ button:hover {
 
 .redirect:hover {
   text-decoration: underline;
+}
+.h1{
+color: #007bff;
 }
