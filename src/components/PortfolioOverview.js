@@ -1,8 +1,8 @@
 import React from "react";
 
 function PortfolioOverview() {
-  const totalValue = "$10,000"; 
-  const dailyChange = "+$200 (2%)";
+  const totalValue = "Rs10,000"; 
+  const dailyChange = "+Rs200 (2%)";
 
   return (
     <div className="portfolio-overview">

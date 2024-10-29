@@ -1,7 +1,7 @@
 import React from "react";
 
 function Performance() {
-  const topStocks = ["Stock A: +5%", "Stock B: +3%"];
+  const topStocks = ["Stock Aplha : +5%", "Stock Beta : +3%"];
   const underperformingStocks = ["Stock X: -2%", "Stock Y: -4%"];
 
   return (

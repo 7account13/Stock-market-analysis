@@ -2,7 +2,7 @@ import React from "react";
 
 function MarketNews() {
   const news = [
-    "Stock A rises amid the  market optimism.",
+    "Stock  rises amid the  market optimism.",
     "Industry analysis shows growth potential in tech."
   ];
 
